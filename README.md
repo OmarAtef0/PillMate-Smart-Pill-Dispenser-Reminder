@@ -1,4 +1,4 @@
-# PillMate: Smart Pill Dispenser & Reminder
+# PillMate: Smart Pill Dispenser & Reminder App
 
 ## 📌 Overview
 
