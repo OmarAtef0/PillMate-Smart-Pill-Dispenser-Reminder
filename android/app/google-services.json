@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "965765655548",
+    "firebase_url": "https://iot-project-5047c-default-rtdb.firebaseio.com",
+    "project_id": "iot-project-5047c",
+    "storage_bucket": "iot-project-5047c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:965765655548:android:a1301e3d6d3ea24fda2079",
+        "android_client_info": {
+          "package_name": "com.example.flutter_application_1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbfJNY3fWXpn8Ex9pAOumDLWIYpBJRTWM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

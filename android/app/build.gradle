@@ -1,0 +1,77 @@
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
+    id "dev.flutter.flutter-gradle-plugin"
+    id "com.google.gms.google-services" 
+}
+
+android {
+    
+    namespace 'com.example.flutter_application_1'
+    compileSdkVersion 35  
+
+    defaultConfig {
+        applicationId = "com.example.flutter_application_1"
+        minSdkVersion 21      
+        targetSdkVersion 35   
+        versionCode 1         
+        versionName "1.0"     
+    }
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+        coreLibraryDesugaringEnabled true
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+
+    buildFeatures {
+        buildConfig true  // Enable BuildConfig
+    }
+
+    buildTypes {
+        release {
+            // Using debug signing config for testing; replace with your own for production
+            signingConfig signingConfigs.debug
+        }
+    }
+
+    // flavorDimensions "flavor-type"
+
+    // productFlavors{
+    //     development{
+    //         dimension "flavor-type"
+    //     }
+    //     staging{
+    //         dimension "flavor-type"
+    //     }
+    //     production{
+    //         dimension "flavor-type"
+    //     }
+    // }
+}
+
+flutter {
+    source = "../.."
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.7.10"
+    
+    // Firebase and other dependencies
+    implementation platform('com.google.firebase:firebase-bom:31.5.0') // Use the latest BOM
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.firebase:firebase-database'
+    
+    // Core library desugaring
+    coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:2.0.3'  // Ensure this line exists
+
+    // Other dependencies
+    implementation 'com.google.android.material:material:1.6.1'
+}
+
+apply plugin: 'com.google.gms.google-services' 
